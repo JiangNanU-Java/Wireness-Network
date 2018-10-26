@@ -1,6 +1,6 @@
 # Computer Knowledge
 
-##  Common English
+##  Daily English
 
 significant 重要
 
