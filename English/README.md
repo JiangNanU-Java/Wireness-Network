@@ -186,6 +186,8 @@ come up with 想出来
 
 illustrated 说明 阐述
 
+as is illustrated in the chart....
+
 depicts 描绘
 
 condition 状态 条件 状况
@@ -296,4 +298,46 @@ company 公司
 
 cooperation 合作
 
+coordinate 坐标 协调
+
 fringe 条纹 附加
+
+obesity 肥胖
+
+intensity 紧张 强度 热情
+
+boasting 拥有 吹牛
+
+deny 否决
+
+envy 嫉妒
+
+jealous 嫉妒
+
+be jealous of 嫉妒...
+
+uncertainty 不确定的
+
+reverse
+
+trick 骗 哄骗 
+
+treat 对待 
+
+treat or trick 不招待就使坏
+
+retreat 撤退
+
+retort 反抗 反驳
+
+resolve 解决
+
+rotary 
+
+lobby 前厅 休息室
+
+material 材料
+
+inevitable 必然的 不可避免的
+
+ 
