@@ -3,31 +3,31 @@ package com.ten.wsn.connection.calculate;
 public class MatrixMath extends Matrix {
     private int n;
 
-    public MatrixMath(int n, int r, int[][] a_matrix, int[][][] a_matrixs, int[][] sum_matrix) {
+    public MatrixMath(int n, int r, int[][] aMatrix, int[][][] aMatrixs, int[][] sumMatrix) {
         this.n = n;
         this.r = r;
-        this.a_matrix = a_matrix;
-        this.a_matrixs = a_matrixs;
-        this.sum_matrix = sum_matrix;
+        this.aMatrix = aMatrix;
+        this.aMatrixs = aMatrixs;
+        this.sumMatrix = sumMatrix;
     }
 
     //计算1——(N-1)阶邻接矩阵的连通率
     public int calculatePro() {
 
-        sum_matrix = new int[n][n];
-        a_matrixs = new int[n + 1][n][n];
+        sumMatrix = new int[n][n];
+        aMatrixs = new int[n + 1][n][n];
 
         //初始化sum矩阵
-        for (int i = 0; i < sum_matrix.length; i++) {
-            for (int j = 0; j < sum_matrix.length; j++) {
-                sum_matrix[i][j] = 0;
+        for (int i = 0; i < sumMatrix.length; i++) {
+            for (int j = 0; j < sumMatrix.length; j++) {
+                sumMatrix[i][j] = 0;
             }
         }
 
 //        //打印邻接矩阵
-//        for (int i = 0; i < a_matrix.length; i++) {
-//            for (int j = 0; j < a_matrix.length; j++) {
-//                System.out.print(a_matrix[i][j]);
+//        for (int i = 0; i < aMatrix.length; i++) {
+//            for (int j = 0; j < aMatrix.length; j++) {
+//                System.out.print(aMatrix[i][j]);
 //            }
 //            System.out.println();
 //        }
@@ -36,24 +36,24 @@ public class MatrixMath extends Matrix {
 //        System.out.println();
 
         //计算1——N-1阶 可达矩阵的值
-        a_matrixs[0] = a_matrix;
+        aMatrixs[0] = aMatrix;
         for (int i = 1; i <= n; i++) {
-            a_matrixs[i] = this.mutiplyMatrix(a_matrixs[i - 1], a_matrix);
+            aMatrixs[i] = this.mutiplyMatrix(aMatrixs[i - 1], aMatrix);
         }
 
         //计算1——N-1阶 可达矩阵之和
-        for (int i = 0; i < sum_matrix.length; i++) {
-            for (int j = 0; j < sum_matrix.length; j++) {
-                for (int k = 0; k < a_matrixs.length; k++) {
-                    sum_matrix[i][j] += a_matrixs[k][i][j];
+        for (int i = 0; i < sumMatrix.length; i++) {
+            for (int j = 0; j < sumMatrix.length; j++) {
+                for (int k = 0; k < aMatrixs.length; k++) {
+                    sumMatrix[i][j] += aMatrixs[k][i][j];
                 }
             }
         }
 
 //        //打印可达矩阵
-//        for (int i = 0; i < sum_matrix.length; i++) {
-//            for (int j = 0; j < sum_matrix.length; j++) {
-//                System.out.print(sum_matrix[i][j]+"   ");
+//        for (int i = 0; i < sumMatrix.length; i++) {
+//            for (int j = 0; j < sumMatrix.length; j++) {
+//                System.out.print(sumMatrix[i][j]+"   ");
 //            }
 //            System.out.println();
 //        }
@@ -61,9 +61,9 @@ public class MatrixMath extends Matrix {
         boolean flag = true;
 
         //计算上三角连通量
-        for (int i = 0; i < sum_matrix.length; i++) {
-            for (int j = 0; j < sum_matrix.length; j++) {
-                if (sum_matrix[i][j] == 0) {
+        for (int i = 0; i < sumMatrix.length; i++) {
+            for (int j = 0; j < sumMatrix.length; j++) {
+                if (sumMatrix[i][j] == 0) {
                     flag = false;
                     break;
                 }

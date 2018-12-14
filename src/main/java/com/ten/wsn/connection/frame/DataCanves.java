@@ -18,7 +18,7 @@ public class DataCanves extends Canvas {
 
     public DataCanves() {
         super();
-        lines = ConnectionLine.getR_list();
+        lines = ConnectionLine.getrList();
         colors = new Color[5];
         colors[0] = Color.GREEN;
         colors[1] = Color.BLUE;

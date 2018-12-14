@@ -21,7 +21,7 @@ public class MainTest {
 
     public static void main(String[] args) {
         init();
-        run_fixN();
+        runFixn();
         //run_fixR();
     }
 
@@ -35,20 +35,20 @@ public class MainTest {
     }
 
     //fix n 循环
-    private static void run_fixN() {
+    private static void runFixn() {
         for (int r : connection_radiu) {
             //fix n 曲线对象
             ConnectionLine line = new ConnectionLine();
 
             for (int n = vertex_size; n <= max_size + 1; n = n + vertex_change) {
                 //（n,r,value）点对象
-                NRMValue new_value = new NRMValue();
+                NRMValue newValue = new NRMValue();
 
                 CalculationThread thread = new CalculationThread(n, r);
 
                 //添加（N,R,M）点到曲线line中
-                new_value.record(n, r, thread.getValue());
-                line.add(new_value);
+                newValue.record(n, r, thread.getValue());
+                line.add(newValue);
             }
 
             System.out.println("finish one n");
@@ -68,7 +68,7 @@ public class MainTest {
         });
     }
 
-    public static int getMax_radiu() {
+    public static int getmaxRadiu() {
         return max_radiu;
     }
 }

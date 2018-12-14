@@ -18,23 +18,23 @@ public class CalculationThread extends Matrix {
     private int r;
     private double mean;
     private int[] means;    //1000次重复 连通率
-    private static final int circle = 1;
+    private static final int CIRCLE = 1;
 
     private VertexMatrix matrix;
     private VertexFactory factory;
     private Vertex[] vset;
 
-    private MatrixMath matrix_math;
+    private MatrixMath matrixMath;
 
     public CalculationThread(int n, int r) {
         this.n = n;
         this.r = r;
-        this.means = new int[circle];
+        this.means = new int[CIRCLE];
         this.run();
     }
 
     private void run() {
-        for (int repeat = 0; repeat < circle; repeat++) {
+        for (int repeat = 0; repeat < CIRCLE; repeat++) {
 
             //创建邻接矩阵
             this.createMatrix();
@@ -43,19 +43,19 @@ public class CalculationThread extends Matrix {
             //计算一阶连通矩阵的连通性
             this.calculateMatrix();
 
-            if ((repeat == 0 && n == 20 && r == 175)) {
+            if (n == 20 && r == 175) {
                 //绘制节点分布图:绘制两个代表图
                 createVertexFrame(this);
                 //打印邻接矩阵
                 //matrix.show();
             }
 
-            this.a_matrix = matrix.getA_matrix();  //获取邻接矩阵
+            this.aMatrix = matrix.getaMatrix();  //获取邻接矩阵
 
             //建立矩阵运算对象
-            this.matrix_math = new MatrixMath(n, r, a_matrix, a_matrixs, sum_matrix);
+            this.matrixMath = new MatrixMath(n, r, aMatrix, aMatrixs, sumMatrix);
             //计算连通率
-            means[repeat] = matrix_math.calculatePro();
+            means[repeat] = matrixMath.calculatePro();
         }
         mean = valueOfMean(means);
         System.out.println("节点数" + n + " 半径" + r + " 连通率：" + mean);

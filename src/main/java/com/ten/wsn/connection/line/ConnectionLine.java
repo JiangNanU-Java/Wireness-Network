@@ -15,7 +15,7 @@ public class ConnectionLine extends ArrayList<NRMValue> {
         r_list.add(this);
     }
 
-    public static ArrayList<ConnectionLine> getR_list() {
+    public static ArrayList<ConnectionLine> getrList() {
         return r_list;
     }
 }

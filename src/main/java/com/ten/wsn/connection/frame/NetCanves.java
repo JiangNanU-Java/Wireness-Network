@@ -20,7 +20,7 @@ public class NetCanves extends Canvas {
         super();
         this.obj = obj;
         this.vset = obj.getVset();
-        this.matrix = obj.getMatrix().getA_matrix();
+        this.matrix = obj.getMatrix().getaMatrix();
     }
 
     @Override

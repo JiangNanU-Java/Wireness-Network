@@ -36,13 +36,13 @@ public class NetCanves extends Canvas implements FrameSize {
 
 
         // 上边
-        g.drawLine(Origin_X, Origin_Y, XAxis_X, XAxis_Y);
+        g.drawLine(ORIGIN_X, ORIGIN_Y, X_AXIS_X, X_AXIS_Y);
         // 下边
-        g.drawLine(YAxis_X, YAxis_Y, XAxis_X, YAxis_Y);
+        g.drawLine(Y_AXIS_X, Y_AXIS_Y, X_AXIS_X, Y_AXIS_Y);
         // 左边
-        g.drawLine(Origin_X, Origin_Y, YAxis_X, YAxis_Y);
+        g.drawLine(ORIGIN_X, ORIGIN_Y, Y_AXIS_X, Y_AXIS_Y);
         // 右边
-        g.drawLine(XAxis_X, XAxis_Y, XAxis_X, YAxis_Y);
+        g.drawLine(X_AXIS_X, X_AXIS_Y, X_AXIS_X, Y_AXIS_Y);
 
 
         g.setColor(green);

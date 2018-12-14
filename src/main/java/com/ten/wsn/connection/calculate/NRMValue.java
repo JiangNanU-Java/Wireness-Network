@@ -33,7 +33,7 @@ public class NRMValue implements PositionInFrame {
 
     @Override
     public int getX() {
-        return (int) ((double) this.getN() / MainTest.getMax_radiu() * WIDTH * 5 + ORIGIN_X);
+        return (int) ((double) this.getN() / MainTest.getmaxRadiu() * WIDTH * 5 + ORIGIN_X);
     }
 
     @Override

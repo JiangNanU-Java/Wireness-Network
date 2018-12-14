@@ -22,12 +22,9 @@ public class Vertex implements PositionInFrame {
     }
 
     //判断通信距离为R时，两点间是否连通
-    public boolean isConnection(Vertex another_v, int R) {
+    public boolean isConnection(Vertex anotherV, int r) {
         //计算欧氏距离 直角三角形定理
-        if (((this.x - another_v.x) * (this.x - another_v.x) + (this.y - another_v.y) * (this.y - another_v.y)) <= (R * R)) {
-            return true;
-        }
-        return false;
+        return ((this.x - anotherV.x) * (this.x - anotherV.x) + (this.y - anotherV.y) * (this.y - anotherV.y)) <= (r * r);
     }
 
     @Override
@@ -40,7 +37,4 @@ public class Vertex implements PositionInFrame {
         return (int) y;
     }
 
-    public int ID() {
-        return this.id;
-    }
 }

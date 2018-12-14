@@ -17,11 +17,11 @@ public class MainTest {
 
     public static void main(String[] args) throws InterruptedException {
         init();
-        run_fixN();
-        run_Paint();
+        runFixn();
+        runPaint();
     }
 
-    private static void run_Paint() throws InterruptedException {
+    private static void runPaint() throws InterruptedException {
         //绘制连通率图
         for (int i = 0; i < connection_radiu.length; i++) {
             createVertexFrame(i);
@@ -46,7 +46,7 @@ public class MainTest {
     }
 
     //fix n 循环
-    private static void run_fixN() {
+    private static void runFixn() {
         for (int r : connection_radiu) {
             new CalculationThread(vertex_size, r);
         }

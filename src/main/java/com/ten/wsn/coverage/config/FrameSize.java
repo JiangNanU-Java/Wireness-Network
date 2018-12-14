@@ -5,15 +5,15 @@ package com.ten.wsn.coverage.config;
  */
 public interface FrameSize {
     // 画布原点坐标
-    int Origin_X = 100;
-    int Origin_Y = 100;
+    int ORIGIN_X = 100;
+    int ORIGIN_Y = 100;
 
     // 画布终点坐标
-    int XAxis_X = 600;
-    int XAxis_Y = Origin_Y;
+    int X_AXIS_X = 600;
+    int X_AXIS_Y = ORIGIN_Y;
 
-    int YAxis_X = Origin_X;
-    int YAxis_Y = 600;
+    int Y_AXIS_X = ORIGIN_X;
+    int Y_AXIS_Y = 600;
 
     //画布尺寸
     int WIDTH = 500;
