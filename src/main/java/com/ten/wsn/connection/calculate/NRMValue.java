@@ -1,9 +1,14 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.calculate;
+
+import com.ten.wsn.connection.MainTest;
+import com.ten.wsn.connection.config.PositionInFrame;
+
+import static com.ten.wsn.connection.config.FrameSize.*;
 
 /**
  * 一条曲线上的点类型：（N,R,M）
  */
-public class NRMValue implements PositionInFrame, FrameSize {
+public class NRMValue implements PositionInFrame {
     private int n;
     private int r;
     private double mean;
@@ -26,11 +31,13 @@ public class NRMValue implements PositionInFrame, FrameSize {
         return mean;
     }
 
+    @Override
     public int getX() {
-        return (int) ((double) this.getN() / MainTest.getMax_radiu() * WIDTH * 5 + Origin_X);
+        return (int) ((double) this.getN() / MainTest.getMax_radiu() * WIDTH * 5 + ORIGIN_X);
     }
 
+    @Override
     public int getY() {
-        return (YAxis_Y - (int) (this.getMean() * HEIGHT));
+        return (Y_AXIS_Y - (int) (this.getMean() * HEIGHT));
     }
 }

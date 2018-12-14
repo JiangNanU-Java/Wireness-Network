@@ -1,4 +1,7 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.coverage.vertex;
+
+import com.ten.wsn.coverage.config.FrameSize;
+import com.ten.wsn.coverage.config.PositionInFrame;
 
 /**
  * Vertex 随机分布节点
@@ -6,6 +9,13 @@ package com.ten.wsn.connection;
 public class Vertex implements PositionInFrame, FrameSize {
     private double x, y;
     private int id;
+
+    //创建标记节点
+    public Vertex(int x, int y) {
+        this.id = 0;
+        this.x = x;
+        this.y = y;
+    }
 
     //随机生成位置
     public Vertex(int i) {
@@ -29,9 +39,5 @@ public class Vertex implements PositionInFrame, FrameSize {
 
     public int getY() {
         return (int) y;
-    }
-
-    public int ID() {
-        return this.id;
     }
 }

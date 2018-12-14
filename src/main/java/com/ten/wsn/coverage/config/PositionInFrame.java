@@ -1,4 +1,4 @@
-package com.ten.wsn.coverage;
+package com.ten.wsn.coverage.config;
 
 /**
  * 获取X和Y的位置

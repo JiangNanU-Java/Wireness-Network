@@ -1,4 +1,6 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.coverage.frame;
+
+import com.ten.wsn.coverage.config.FrameSize;
 
 import javax.swing.*;
 

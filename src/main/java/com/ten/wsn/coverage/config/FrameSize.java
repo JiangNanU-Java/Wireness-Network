@@ -1,4 +1,4 @@
-package com.ten.wsn.coverage;
+package com.ten.wsn.coverage.config;
 
 /**
  * 画布尺寸信息

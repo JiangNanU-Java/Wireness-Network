@@ -1,4 +1,4 @@
-package com.ten.wsn.coverage;
+package com.ten.wsn.coverage.vertex;
 
 /**
  * 创建Vertex节点的工厂

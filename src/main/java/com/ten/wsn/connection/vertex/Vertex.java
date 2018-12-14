@@ -1,24 +1,24 @@
-package com.ten.wsn.coverage;
+package com.ten.wsn.connection.vertex;
+
+import com.ten.wsn.connection.config.PositionInFrame;
+import com.ten.wsn.connection.config.FrameSize;
+
+import static com.ten.wsn.connection.config.FrameSize.HEIGHT;
+import static com.ten.wsn.connection.config.FrameSize.ORIGIN_X;
+import static com.ten.wsn.connection.config.FrameSize.ORIGIN_Y;
 
 /**
  * Vertex 随机分布节点
  */
-public class Vertex implements PositionInFrame, FrameSize {
+public class Vertex implements PositionInFrame {
     private double x, y;
     private int id;
-
-    //创建标记节点
-    public Vertex(int x, int y) {
-        this.id = 0;
-        this.x = x;
-        this.y = y;
-    }
 
     //随机生成位置
     public Vertex(int i) {
         this.id = i;
-        this.x = (double) (Math.random() * WIDTH) + Origin_X;
-        this.y = (double) (Math.random() * HEIGHT) + Origin_Y;
+        this.x = (double) (Math.random() * FrameSize.WIDTH) + ORIGIN_X;
+        this.y = (double) (Math.random() * HEIGHT) + ORIGIN_Y;
     }
 
     //判断通信距离为R时，两点间是否连通
@@ -30,11 +30,17 @@ public class Vertex implements PositionInFrame, FrameSize {
         return false;
     }
 
+    @Override
     public int getX() {
         return (int) x;
     }
 
+    @Override
     public int getY() {
         return (int) y;
+    }
+
+    public int ID() {
+        return this.id;
     }
 }

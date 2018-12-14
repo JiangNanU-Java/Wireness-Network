@@ -1,4 +1,6 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.vertex;
+
+import com.ten.wsn.connection.vertex.Vertex;
 
 /**
  * 创建Vertex随机节点的工厂

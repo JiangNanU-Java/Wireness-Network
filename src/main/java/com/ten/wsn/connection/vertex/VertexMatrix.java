@@ -1,4 +1,4 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.vertex;
 
 /**
  * 创建无向图的邻接矩阵

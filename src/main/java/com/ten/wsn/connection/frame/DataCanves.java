@@ -1,12 +1,17 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.frame;
+
+import com.ten.wsn.connection.calculate.NRMValue;
+import com.ten.wsn.connection.line.ConnectionLine;
 
 import java.awt.*;
 import java.util.ArrayList;
 
+import static com.ten.wsn.connection.config.FrameSize.*;
+
 /**
  * 绘制连通率的图
  */
-public class DataCanves extends Canvas implements FrameSize {
+public class DataCanves extends Canvas {
 
     private ArrayList<ConnectionLine> lines;
     private Color[] colors;
@@ -35,25 +40,25 @@ public class DataCanves extends Canvas implements FrameSize {
         g2D.setStroke(new BasicStroke(Float.parseFloat("2.0F")));// 轴线粗度
 
         // 上边
-        g.drawLine(Origin_X, Origin_Y, XAxis_X, XAxis_Y);
+        g.drawLine(ORIGIN_X, ORIGIN_Y, X_AXIS_X, X_AXIS_Y);
         // 下边
-        g.drawLine(YAxis_X, YAxis_Y, XAxis_X, YAxis_Y);
+        g.drawLine(Y_AXIS_X, Y_AXIS_Y, X_AXIS_X, Y_AXIS_Y);
         // 左边
-        g.drawLine(Origin_X, Origin_Y, YAxis_X, YAxis_Y);
+        g.drawLine(ORIGIN_X, ORIGIN_Y, Y_AXIS_X, Y_AXIS_Y);
         // 右边
-        g.drawLine(XAxis_X, XAxis_Y, XAxis_X, YAxis_Y);
+        g.drawLine(X_AXIS_X, X_AXIS_Y, X_AXIS_X, Y_AXIS_Y);
         //绘制X坐标
-        g.drawString("节点数目变化", YAxis_X + 200, YAxis_Y + 40);
+        g.drawString("节点数目变化", Y_AXIS_X + 200, Y_AXIS_Y + 40);
         for (int i = 0; i <= 10; i++) {
-            g.drawLine(YAxis_X + i * 50, YAxis_Y, YAxis_X + i * 50, YAxis_Y - 10);
-            g.drawString(i * 10 + "", YAxis_X + i * 50, YAxis_Y + 10);
+            g.drawLine(Y_AXIS_X + i * 50, Y_AXIS_Y, Y_AXIS_X + i * 50, Y_AXIS_Y - 10);
+            g.drawString(i * 10 + "", Y_AXIS_X + i * 50, Y_AXIS_Y + 10);
         }
         //绘制Y坐标
-        g.drawString("连", YAxis_X - 40, YAxis_Y - 300);
-        g.drawString("通", YAxis_X - 40, YAxis_Y - 280);
-        g.drawString("率", YAxis_X - 40, YAxis_Y - 260);
+        g.drawString("连", Y_AXIS_X - 40, Y_AXIS_Y - 300);
+        g.drawString("通", Y_AXIS_X - 40, Y_AXIS_Y - 280);
+        g.drawString("率", Y_AXIS_X - 40, Y_AXIS_Y - 260);
         for (int i = 0; i <= 10; i++) {
-            g.drawString((double) i / 10 + "", YAxis_X - 20, YAxis_Y - i * 50);
+            g.drawString((double) i / 10 + "", Y_AXIS_X - 20, Y_AXIS_Y - i * 50);
         }
 
         g2D.setStroke(new BasicStroke(Float.parseFloat("1.0F")));// 轴线粗度
@@ -68,8 +73,8 @@ public class DataCanves extends Canvas implements FrameSize {
                 //绘制指示线
                 if (i == 0) {
                     g.setColor(colors[num++]);
-                    g.drawLine(XAxis_X - 50, XAxis_Y + (num + 1) * 50, XAxis_X, XAxis_Y + (num + 1) * 50);
-                    g.drawString("r:" + value.getR(), XAxis_X - 100, XAxis_Y + (num + 1) * 50);
+                    g.drawLine(X_AXIS_X - 50, X_AXIS_Y + (num + 1) * 50, X_AXIS_X, X_AXIS_Y + (num + 1) * 50);
+                    g.drawString("r:" + value.getR(), X_AXIS_X - 100, X_AXIS_Y + (num + 1) * 50);
                 }
 
                 g.fillRect(value.getX(), value.getY(), 5, 5);

@@ -1,5 +1,10 @@
 package com.ten.wsn.connection;
 
+import com.ten.wsn.connection.calculate.CalculationThread;
+import com.ten.wsn.connection.calculate.NRMValue;
+import com.ten.wsn.connection.frame.DataFrame;
+import com.ten.wsn.connection.line.ConnectionLine;
+
 import javax.swing.*;
 import java.awt.*;
 

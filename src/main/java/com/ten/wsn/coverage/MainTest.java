@@ -1,5 +1,9 @@
 package com.ten.wsn.coverage;
 
+import com.ten.wsn.coverage.calculate.CalculationThread;
+import com.ten.wsn.coverage.frame.DataFrame;
+import com.ten.wsn.coverage.frame.NetworkFrame;
+
 import javax.swing.*;
 import java.awt.*;
 

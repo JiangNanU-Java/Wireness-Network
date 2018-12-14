@@ -1,11 +1,16 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.frame;
+
+import com.ten.wsn.connection.calculate.CalculationThread;
+import com.ten.wsn.connection.vertex.Vertex;
 
 import java.awt.*;
+
+import static com.ten.wsn.connection.config.FrameSize.*;
 
 /**
  * 绘制网络节点图
  */
-public class NetCanves extends Canvas implements FrameSize {
+public class NetCanves extends Canvas {
 
     private CalculationThread obj;
     private Vertex[] vset;
@@ -30,16 +35,16 @@ public class NetCanves extends Canvas implements FrameSize {
         // 画坐标轴
         g2D.setStroke(new BasicStroke(Float.parseFloat("2.0F")));// 轴线粗度
 
-        g.drawString("n r:" + obj.getN() + "  " + obj.getR(), Origin_X, Origin_Y - 30);
+        g.drawString("n r:" + obj.getN() + "  " + obj.getR(), ORIGIN_X, ORIGIN_Y - 30);
 
         // 上边
-        g.drawLine(Origin_X, Origin_Y, XAxis_X, XAxis_Y);
+        g.drawLine(ORIGIN_X, ORIGIN_Y, X_AXIS_X, X_AXIS_Y);
         // 下边
-        g.drawLine(YAxis_X, YAxis_Y, XAxis_X, YAxis_Y);
+        g.drawLine(Y_AXIS_X, Y_AXIS_Y, X_AXIS_X, Y_AXIS_Y);
         // 左边
-        g.drawLine(Origin_X, Origin_Y, YAxis_X, YAxis_Y);
+        g.drawLine(ORIGIN_X, ORIGIN_Y, Y_AXIS_X, Y_AXIS_Y);
         // 右边
-        g.drawLine(XAxis_X, XAxis_Y, XAxis_X, YAxis_Y);
+        g.drawLine(X_AXIS_X, X_AXIS_Y, X_AXIS_X, Y_AXIS_Y);
 
         //绘制随机的节点图
         for (int i = 0; i < vset.length; i++) {

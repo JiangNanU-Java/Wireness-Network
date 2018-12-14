@@ -1,4 +1,4 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.calculate;
 
 public class MatrixMath extends Matrix {
     private int n;

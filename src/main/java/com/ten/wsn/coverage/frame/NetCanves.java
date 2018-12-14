@@ -1,4 +1,8 @@
-package com.ten.wsn.coverage;
+package com.ten.wsn.coverage.frame;
+
+import com.ten.wsn.coverage.calculate.CalculationThread;
+import com.ten.wsn.coverage.config.FrameSize;
+import com.ten.wsn.coverage.vertex.Vertex;
 
 import java.awt.*;
 import java.util.ArrayList;

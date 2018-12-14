@@ -1,4 +1,4 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.config;
 
 /**
  * 获取X和Y的位置

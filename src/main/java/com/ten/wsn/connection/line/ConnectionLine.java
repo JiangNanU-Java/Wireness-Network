@@ -1,4 +1,6 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.line;
+
+import com.ten.wsn.connection.calculate.NRMValue;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,6 @@
-package com.ten.wsn.coverage;
+package com.ten.wsn.coverage.calculate;
+
+import com.ten.wsn.coverage.vertex.Vertex;
 
 /**
  * 计算覆盖率

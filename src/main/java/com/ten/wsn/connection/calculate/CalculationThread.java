@@ -1,4 +1,9 @@
-package com.ten.wsn.connection;
+package com.ten.wsn.connection.calculate;
+
+import com.ten.wsn.connection.frame.NetworkFrame;
+import com.ten.wsn.connection.vertex.Vertex;
+import com.ten.wsn.connection.vertex.VertexFactory;
+import com.ten.wsn.connection.vertex.VertexMatrix;
 
 import javax.swing.*;
 import java.awt.*;
