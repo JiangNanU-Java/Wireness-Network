@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Wireness-Network.iml" filepath="$PROJECT_DIR$/.idea/Wireness-Network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSN-Connection.iml" filepath="$PROJECT_DIR$/WSN-Connection.iml" />
     </modules>
   </component>
 </project>
