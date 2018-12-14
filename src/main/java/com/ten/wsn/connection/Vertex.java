@@ -9,7 +9,7 @@ public class Vertex implements PositionInFrame, FrameSize {
 
     //随机生成位置
     public Vertex(int i) {
-        this.id=i;
+        this.id = i;
         this.x = (double) (Math.random() * WIDTH) + Origin_X;
         this.y = (double) (Math.random() * HEIGHT) + Origin_Y;
     }
@@ -31,7 +31,7 @@ public class Vertex implements PositionInFrame, FrameSize {
         return (int) y;
     }
 
-    public int ID(){
+    public int ID() {
         return this.id;
     }
 }

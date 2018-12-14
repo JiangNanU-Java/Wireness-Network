@@ -13,7 +13,7 @@ public class CalculationThread extends Matrix {
     private int r;
     private double mean;
     private int[] means;    //1000次重复 连通率
-    private static final int circle=1;
+    private static final int circle = 1;
 
     private VertexMatrix matrix;
     private VertexFactory factory;

@@ -38,7 +38,7 @@ public class MainTest {
     //初始化节点个数和通信半径
     private static void init() {
         vertex_size = 20;  //节点数量
-        connection_radiu = new int[]{25,75,125,175,225,275,325,375}; //五级通信半径 .05 .15 .25 .35 .45
+        connection_radiu = new int[]{25, 75, 125, 175, 225, 275, 325, 375}; //五级通信半径 .05 .15 .25 .35 .45
     }
 
     //fix n 循环

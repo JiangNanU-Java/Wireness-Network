@@ -15,7 +15,7 @@ public class MatrixMath extends Matrix {
     public int calculatePro() {
 
         sum_matrix = new int[n][n];
-        a_matrixs = new int[n+1][n][n];
+        a_matrixs = new int[n + 1][n][n];
 
         //初始化sum矩阵
         for (int i = 0; i < sum_matrix.length; i++) {
@@ -58,13 +58,13 @@ public class MatrixMath extends Matrix {
 //            System.out.println();
 //        }
 
-        boolean flag=true;
+        boolean flag = true;
 
         //计算上三角连通量
         for (int i = 0; i < sum_matrix.length; i++) {
             for (int j = 0; j < sum_matrix.length; j++) {
                 if (sum_matrix[i][j] == 0) {
-                    flag=false;
+                    flag = false;
                     break;
                 }
             }
@@ -92,11 +92,11 @@ public class MatrixMath extends Matrix {
 
         //(n-1)*1=n 矩阵乘法 上三角矩阵
         for (int i = 0; i < pre_matrix.length; i++) {
-            for (int j = 0 ; j < a_matrix.length; j++) {
+            for (int j = 0; j < a_matrix.length; j++) {
                 for (int k = 0; k < c_matrix.length; k++) {
                     c_matrix[i][j] += pre_matrix[i][k] * a_matrix[k][j];
-                    if (c_matrix[i][j]!=0){
-                        c_matrix[i][j]=1;
+                    if (c_matrix[i][j] != 0) {
+                        c_matrix[i][j] = 1;
                     }
                 }
             }

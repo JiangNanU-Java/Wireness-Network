@@ -35,7 +35,7 @@ public class MainTest {
             //fix n 曲线对象
             ConnectionLine line = new ConnectionLine();
 
-            for (int n = vertex_size; n <= max_size+1; n = n + vertex_change) {
+            for (int n = vertex_size; n <= max_size + 1; n = n + vertex_change) {
                 //（n,r,value）点对象
                 NRMValue new_value = new NRMValue();
 

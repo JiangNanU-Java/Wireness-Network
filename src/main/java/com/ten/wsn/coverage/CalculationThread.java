@@ -17,9 +17,9 @@ public class CalculationThread {
     private static Vertex[] vset;      //路由节点矩阵
     private int[][] flag_con; //判断节点矩阵
 
-    private static double[] fugailv=new double[8];
-    private static int count=0;
-    private static ArrayList<int[][]> arrayList=new ArrayList<>();
+    private static double[] fugailv = new double[8];
+    private static int count = 0;
+    private static ArrayList<int[][]> arrayList = new ArrayList<>();
 
     private MatrixMath matrix_math;
 
@@ -35,7 +35,7 @@ public class CalculationThread {
             //500*500
             this.createMatrix();
 
-            if(r==25){
+            if (r == 25) {
                 createVertexs();
             }
 
@@ -63,8 +63,8 @@ public class CalculationThread {
                 }
             }
 
-            double fugai=(double) one_count / (one_count + zero_count);
-            fugailv[count++]=fugai;
+            double fugai = (double) one_count / (one_count + zero_count);
+            fugailv[count++] = fugai;
             System.out.println("覆盖个数" + one_count + "未覆盖个数" + zero_count);
             System.out.println("覆盖率" + fugai);
         }

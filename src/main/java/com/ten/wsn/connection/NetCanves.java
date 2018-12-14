@@ -5,7 +5,7 @@ import java.awt.*;
 /**
  * 绘制网络节点图
  */
-public class NetCanves extends Canvas implements FrameSize{
+public class NetCanves extends Canvas implements FrameSize {
 
     private CalculationThread obj;
     private Vertex[] vset;
@@ -13,7 +13,7 @@ public class NetCanves extends Canvas implements FrameSize{
 
     public NetCanves(CalculationThread obj) {
         super();
-        this.obj=obj;
+        this.obj = obj;
         this.vset = obj.getVset();
         this.matrix = obj.getMatrix().getA_matrix();
     }
@@ -30,7 +30,7 @@ public class NetCanves extends Canvas implements FrameSize{
         // 画坐标轴
         g2D.setStroke(new BasicStroke(Float.parseFloat("2.0F")));// 轴线粗度
 
-        g.drawString("n r:"+obj.getN()+"  "+obj.getR(),Origin_X,Origin_Y-30);
+        g.drawString("n r:" + obj.getN() + "  " + obj.getR(), Origin_X, Origin_Y - 30);
 
         // 上边
         g.drawLine(Origin_X, Origin_Y, XAxis_X, XAxis_Y);

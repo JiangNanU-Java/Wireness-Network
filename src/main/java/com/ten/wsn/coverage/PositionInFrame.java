@@ -5,5 +5,6 @@ package com.ten.wsn.coverage;
  */
 public interface PositionInFrame {
     int getX();
+
     int getY();
 }

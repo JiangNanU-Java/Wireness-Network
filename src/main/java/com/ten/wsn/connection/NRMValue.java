@@ -27,7 +27,7 @@ public class NRMValue implements PositionInFrame, FrameSize {
     }
 
     public int getX() {
-        return (int) ((double)this.getN() / MainTest.getMax_radiu() * WIDTH * 5+ Origin_X);
+        return (int) ((double) this.getN() / MainTest.getMax_radiu() * WIDTH * 5 + Origin_X);
     }
 
     public int getY() {

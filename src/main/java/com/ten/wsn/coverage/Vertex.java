@@ -8,15 +8,15 @@ public class Vertex implements PositionInFrame, FrameSize {
     private int id;
 
     //创建标记节点
-    public Vertex(int x,int y){
-        this.id=0;
-        this.x=x;
-        this.y=y;
+    public Vertex(int x, int y) {
+        this.id = 0;
+        this.x = x;
+        this.y = y;
     }
 
     //随机生成位置
     public Vertex(int i) {
-        this.id=i;
+        this.id = i;
         this.x = (double) (Math.random() * WIDTH) + Origin_X;
         this.y = (double) (Math.random() * HEIGHT) + Origin_Y;
     }

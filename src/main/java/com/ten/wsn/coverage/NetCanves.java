@@ -6,15 +6,15 @@ import java.util.ArrayList;
 /**
  * 绘制网络节点图
  */
-public class NetCanves extends Canvas implements FrameSize{
+public class NetCanves extends Canvas implements FrameSize {
 
     private int[][] flagset;
-    private static Vertex[] vset=CalculationThread.getVset();
-    private static ArrayList<int[][]> arrayList=CalculationThread.getArrayList();
+    private static Vertex[] vset = CalculationThread.getVset();
+    private static ArrayList<int[][]> arrayList = CalculationThread.getArrayList();
 
     public NetCanves(int i) {
         super();
-        flagset=arrayList.get(i);
+        flagset = arrayList.get(i);
     }
 
     @Override
@@ -48,10 +48,10 @@ public class NetCanves extends Canvas implements FrameSize{
         }
 
         g.setColor(r);
-        for (int i = 0; i < flagset.length; i+=4) {
-            for (int j = 0; j < flagset[0].length; j+=4) {
+        for (int i = 0; i < flagset.length; i += 4) {
+            for (int j = 0; j < flagset[0].length; j += 4) {
                 if (flagset[i][j] != 0) {
-                    g.drawRect(i+100, j+100, 4, 4);
+                    g.drawRect(i + 100, j + 100, 4, 4);
                 }
             }
         }

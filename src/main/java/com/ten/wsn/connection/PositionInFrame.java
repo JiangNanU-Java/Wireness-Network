@@ -5,5 +5,6 @@ package com.ten.wsn.connection;
  */
 public interface PositionInFrame {
     public int getX();
+
     public int getY();
 }

@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37f05223-1805-4a11-bf89-65c7216a8d93" name="Default" comment="" />
+    <list default="true" id="37f05223-1805-4a11-bf89-65c7216a8d93" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/CalculationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/CalculationThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/ConnectionLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/ConnectionLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/DataCanves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/DataCanves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/DataFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/DataFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/MatrixMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/MatrixMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/NRMValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/NRMValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/NetCanves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/NetCanves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/PositionInFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/PositionInFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/VertexFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/VertexFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/VertexMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/VertexMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/DFS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/CalculationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/CalculationThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/DataCanves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/DataCanves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/DataFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/DataFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/MatrixMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/MatrixMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/NetCanves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/NetCanves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/PositionInFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/PositionInFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/VertexFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/VertexFactory.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,14 +39,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculationThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/CalculationThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="126">
-                <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <first_editor relative-caret-position="84">
+                <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -49,6 +113,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/MainTest.java" />
       </list>
     </option>
   </component>
@@ -57,6 +123,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="800" />
@@ -71,8 +144,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,18 +157,51 @@
             <path>
               <item name="Wireness-Network" type="b2602c69:ProjectViewProjectNode" />
               <item name="Wireness-Network" type="462c0819:PsiDirectoryNode" />
-              <item name="WSN-Connection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Wireness-Network" type="b2602c69:ProjectViewProjectNode" />
               <item name="Wireness-Network" type="462c0819:PsiDirectoryNode" />
-              <item name="WSN-Coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Wireness-Network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wireness-Network" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Wireness-Network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wireness-Network" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wsn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Wireness-Network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wireness-Network" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wsn" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Wireness-Network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wireness-Network" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wsn" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -103,9 +210,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15795207" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,6 +281,7 @@
       <updated>1544783928300</updated>
       <workItem from="1544783929645" duration="190000" />
       <workItem from="1544784133610" duration="198000" />
+      <workItem from="1544784353558" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="wsn">
       <created>1544784278228</created>
@@ -182,15 +290,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544784278228</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wsn">
+      <created>1544784471408</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544784471408</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388000" />
+    <option name="totallyTimeSpent" value="658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -205,7 +319,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2537112" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25775978" />
       <window_info anchor="bottom" id="Statistic" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -236,6 +350,23 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
         </state>
@@ -255,13 +386,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <first_editor relative-caret-position="84">
+            <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding>
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/coverage/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/CalculationThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
         </state>
       </provider>
     </entry>
