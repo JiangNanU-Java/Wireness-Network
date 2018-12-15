@@ -1,6 +1,6 @@
 package com.ten.wsn.connection.calculate;
 
-import com.ten.wsn.connection.MainTest;
+import com.ten.wsn.connection.WSNConnection;
 import com.ten.wsn.connection.config.PositionInFrame;
 
 import static com.ten.wsn.connection.config.FrameSize.*;
@@ -33,7 +33,7 @@ public class NRMValue implements PositionInFrame {
 
     @Override
     public int getX() {
-        return (int) ((double) this.getN() / MainTest.getmaxRadiu() * WIDTH * 5 + ORIGIN_X);
+        return (int) ((double) this.getN() / WSNConnection.getmaxRadiu() * WIDTH * 5 + ORIGIN_X);
     }
 
     @Override
