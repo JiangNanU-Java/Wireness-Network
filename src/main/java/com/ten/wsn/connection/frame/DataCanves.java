@@ -1,10 +1,10 @@
 package com.ten.wsn.connection.frame;
 
+import com.ten.wsn.connection.WSNConnection;
 import com.ten.wsn.connection.calculate.NRMValue;
-import com.ten.wsn.connection.line.ConnectionLine;
 
 import java.awt.*;
-import java.util.ArrayList;
+import java.util.List;
 
 import static com.ten.wsn.connection.config.FrameSize.*;
 
@@ -13,12 +13,12 @@ import static com.ten.wsn.connection.config.FrameSize.*;
  */
 public class DataCanves extends Canvas {
 
-    private ArrayList<ConnectionLine> lines;
+    private List<List<NRMValue>> lines;
     private Color[] colors;
 
     public DataCanves() {
         super();
-        lines = ConnectionLine.getrList();
+        lines = WSNConnection.getLines();
         colors = new Color[5];
         colors[0] = Color.GREEN;
         colors[1] = Color.BLUE;
@@ -66,13 +66,13 @@ public class DataCanves extends Canvas {
 
         int num = 0;
 
-        for (ArrayList<NRMValue> line : lines) {
+        for (List<NRMValue> line : lines) {
             //绘制连通率的节点图
             for (int i = 0; i < line.size(); i++) {
                 NRMValue value = line.get(i);
                 //绘制指示线
                 if (i == 0) {
-                    g.setColor(colors[num++]);
+                    g.setColor(colors[num++ % 5]);
                     g.drawLine(X_AXIS_X - 50, X_AXIS_Y + (num + 1) * 50, X_AXIS_X, X_AXIS_Y + (num + 1) * 50);
                     g.drawString("r:" + value.getR(), X_AXIS_X - 100, X_AXIS_Y + (num + 1) * 50);
                 }

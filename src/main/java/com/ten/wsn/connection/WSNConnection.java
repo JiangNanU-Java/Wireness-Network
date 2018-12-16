@@ -3,13 +3,12 @@ package com.ten.wsn.connection;
 import com.ten.wsn.connection.calculate.CalculationThread;
 import com.ten.wsn.connection.calculate.NRMValue;
 import com.ten.wsn.connection.frame.DataFrame;
-import com.ten.wsn.connection.line.ConnectionLine;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 无线传感器网络连通率分析
@@ -23,7 +22,7 @@ public class WSNConnection {
     /**
      * 节点数目递增量
      */
-    private static final int VERTEX_INCREASE_NUMBER = 2;
+    private static final int VERTEX_INCREASE_NUMBER = 20;
     /**
      * 节点最大数目
      */
@@ -31,7 +30,7 @@ public class WSNConnection {
     /**
      * 节点初始通信半径
      */
-    private static final int VERTEX_INIT_REDIU = 0;
+    private static final int VERTEX_INIT_REDIU = 1;
     /**
      * 节点通信半径递增量
      */
@@ -52,8 +51,7 @@ public class WSNConnection {
 
     public static void main(String[] args) {
         init();
-        runFixn();
-        //run_fixR();
+        runFixN();
     }
 
     /**
@@ -67,44 +65,64 @@ public class WSNConnection {
             vertexNumbers.add(n);
         }
 
+
         for (int r = VERTEX_INIT_REDIU; r <= VERTEX_MAX_REDIU; r += VERTEX_INCREASE_REDIU) {
             vertexRedius.add(r);
         }
     }
 
+    private static List<List<NRMValue>> lines;
+
     /**
      * 固定节点数量 N， 节点通信半径递增 R
      */
-    private static void runFixn() {
-        vertexRedius.forEach(
+    private static void runFixN() {
+        lines = vertexRedius.parallelStream().map(
                 r -> {
                     //fix n 曲线对象
-                    ConnectionLine line = new ConnectionLine();
 
-                    vertexNumbers.forEach(n -> {
-                                //（n,r,value）点对象
-                                NRMValue newValue = new NRMValue();
+                    List<NRMValue> line = vertexNumbers.stream()
+                            .map(
+                                    n -> {
+                                        //（n,r,value）点对象
+                                        NRMValue newValue = new NRMValue();
 
-                                CalculationThread thread = new CalculationThread(n, r);
+                                        CalculationThread thread = new CalculationThread(n, r);
 
-                                //添加（N,R,M）点到曲线line中
-                                newValue.record(n, r, thread.getValue());
+                                        //添加（N,R,M）点到曲线line中
+                                        newValue.record(n, r, thread.getValue());
 
-                                line.add(newValue);
-                            }
-                    );
+                                        return newValue;
+                                    }
+                            ).collect(Collectors.toList());
 
 
                     System.out.println("finish one n");
-                }
-        );
 
-        System.out.println("finish all n");
-        //绘制连通率图
+                    return line;
+                }
+        ).collect(Collectors.toList());
+
+        System.out.println("finish all n ");
+
+        lines.forEach(line -> {
+            String result = line.stream().map(NRMValue::toString).collect(Collectors.joining(", "));
+            System.out.println(result);
+        });
+
+        int count = lines.stream()
+                .map(line -> 1)
+                .reduce(0, (a, b) -> a + b);
+
+        System.out.println("包含:" + count + "条曲线");
+
+        // 绘制连通率图
         createDataFrame();
     }
 
-    //生成结果数据图
+    /**
+     * 生成结果数据图
+     */
     private static void createDataFrame() {
         EventQueue.invokeLater(() -> {
             DataFrame network = new DataFrame();
@@ -115,6 +133,10 @@ public class WSNConnection {
 
     public static int getmaxRadiu() {
         return VERTEX_MAX_REDIU;
+    }
+
+    public static List<List<NRMValue>> getLines() {
+        return lines;
     }
 }
 

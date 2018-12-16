@@ -19,6 +19,15 @@ public class NRMValue implements PositionInFrame {
         this.mean = mean;
     }
 
+    @Override
+    public String toString() {
+        return "NRMValue{" +
+                "n=" + n +
+                ", r=" + r +
+                ", mean=" + mean +
+                '}';
+    }
+
     public int getN() {
         return n;
     }
