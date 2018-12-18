@@ -30,10 +30,12 @@ public class CalculationThread extends Matrix {
         this.n = n;
         this.r = r;
         this.means = new int[CIRCLE];
-        this.run();
     }
 
-    private void run() {
+    /**
+     * 启动计算 TODO 异步计算
+     */
+    public CalculationThread run() {
         for (int repeat = 0; repeat < CIRCLE; repeat++) {
 
             //创建邻接矩阵
@@ -59,6 +61,8 @@ public class CalculationThread extends Matrix {
         }
         mean = valueOfMean(means);
         System.out.println("节点数" + n + " 半径" + r + " 连通率：" + mean);
+
+        return this;
     }
 
     //节点随机分布图
