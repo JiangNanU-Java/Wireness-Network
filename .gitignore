@@ -2,3 +2,9 @@
 .gitignore
 .idea/Wireness-Network.iml
 .idea/misc.xml
+out/
+src/main/python/.idea/
+src/main/python/venv/
+src/main/resources/
+src/test/
+target/
