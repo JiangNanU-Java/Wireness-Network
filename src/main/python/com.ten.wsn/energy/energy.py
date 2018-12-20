@@ -33,10 +33,10 @@ def node_factory(N, energy=5000):
 
     # print("生成:", len(nodes), "个节点")
     # print("初始化标志列表为", selected_flag)
-    return nodes,selected_flag
+    return nodes, selected_flag
 
 
-def sel_heads(r,nodes, flags):
+def sel_heads(r, nodes, flags):
     """
     根据阈值选取簇头节点
     :param r: 轮数
@@ -78,7 +78,7 @@ def sel_heads(r,nodes, flags):
     return heads, members
 
 
-def classify(nodes,flag, mode=1, k=20):
+def classify(nodes, flag, mode=1, k=20):
     """
     进行簇分类
     :param nodes: 节点列表
@@ -97,7 +97,7 @@ def classify(nodes,flag, mode=1, k=20):
         # mode1: 若无死亡节点 继续迭代
         if e_is_empty == 0:
             # 获取簇首列表，簇成员列表
-            heads, members = sel_heads(r,nodes,flag)
+            heads, members = sel_heads(r, nodes, flag)
             # 建立簇类的列表
             classes = [[] for _ in range(len(heads))]
 
@@ -208,9 +208,9 @@ def run():
     # N = int(input("请输入节点个数:"))
     N = 100
     # 获取初始节点列表
-    nodes,flag = node_factory(N, energy=2000)
+    nodes, flag = node_factory(N, energy=2000)
     # 对节点列表进行簇分类,mode为模式 2种
-    iter_classes = classify(nodes,flag, mode=1, k=20)
+    iter_classes = classify(nodes, flag, mode=1, k=20)
     # 迭代每次聚类结果，显示连线图
     for classes in iter_classes:
         # 显示分类结果

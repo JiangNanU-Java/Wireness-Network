@@ -46,8 +46,8 @@ def sel_heads(r, nodes, flags):
     :return: 簇首列表heads,簇成员列表members
     """
     # 阈值函数 Tn 使用leach计算
-    P=0.05*(100/len(nodes))
-    Tn = P / (1 - P * (r%(1/P)))
+    P = 0.05 * (100 / len(nodes))
+    Tn = P / (1 - P * (r % (1 / P)))
     # print("阈值为:", Tn)
 
     # 簇首列表
@@ -93,6 +93,7 @@ def claasify(nodes, flag, k=1):
     :return: 簇分类结果列表 classes[[类1..],[类2...],......]  [类1...簇首...簇成员]
     """
     # k轮的集合
+    global head_cla
     iter_classes = []
     # 迭代r轮
     for r in range(k):
@@ -123,7 +124,7 @@ def claasify(nodes, flag, k=1):
                     dist_min = dist_heads
                     head_cla = i
             # 0个簇首的情况
-            if dist_min==1:
+            if dist_min == 1:
                 print("本轮没有簇首!")
                 break
 
@@ -132,7 +133,7 @@ def claasify(nodes, flag, k=1):
 
         # 将簇首作为首节点添加到聚类列表中
         # for i in range(len(classes)):
-            # print("第", i + 1, "类包含:", classes[i])
+        # print("第", i + 1, "类包含:", classes[i])
 
         iter_classes.append(classes)
 
@@ -178,7 +179,7 @@ def run():
 
     :return:
     """
-    N=100
+    N = 100
     # N = int(input("请输入节点个数:"))
     # 获取初始节点列表，选择标志列表
     nodes, flag = node_factory(N)

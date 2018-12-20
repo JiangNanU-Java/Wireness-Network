@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37f05223-1805-4a11-bf89-65c7216a8d93" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/WSNimage/1-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSNimage/1-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSNimage/2-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSNimage/2-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSNimage/2-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSNimage/2-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSNimage/3-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/com.ten.wsn/clustering/cluster.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/com.ten.wsn/energy/energy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="37f05223-1805-4a11-bf89-65c7216a8d93" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,8 +58,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <first_editor relative-caret-position="126">
+                <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -421,7 +408,7 @@
       <workItem from="1545095563619" duration="63000" />
       <workItem from="1545095660554" duration="12357000" />
       <workItem from="1545136970934" duration="602000" />
-      <workItem from="1545288654644" duration="1978000" />
+      <workItem from="1545288654644" duration="3137000" />
     </task>
     <task id="LOCAL-00001" summary="wsn">
       <created>1544784278228</created>
@@ -479,14 +466,22 @@
       <option name="project" value="LOCAL" />
       <updated>1545126284318</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="-update readme&#10;-add python project">
+      <created>1545290662928</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545290662928</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36632000" />
+    <option name="totallyTimeSpent" value="37791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -533,7 +528,8 @@
     <MESSAGE value="Refactor : Stream" />
     <MESSAGE value="Refactor By Stream" />
     <MESSAGE value="-use &quot;Completable&lt;T&gt;&quot; and &quot;Stream&lt;T&gt;&quot; Framework to refactor tast implementation process&#10;-use abstract super class to refactor frame and canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="-use &quot;Completable&lt;T&gt;&quot; and &quot;Stream&lt;T&gt;&quot; Framework to refactor tast implementation process&#10;-use abstract super class to refactor frame and canvas" />
+    <MESSAGE value="-update readme&#10;-add python project" />
+    <option name="LAST_COMMIT_MESSAGE" value="-update readme&#10;-add python project" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/wsn/connection/graph/DFS.java" />
@@ -871,8 +867,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <first_editor relative-caret-position="126">
+            <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
