@@ -1,6 +1,6 @@
 package com.ten.wsn.connection.frame;
 
-import com.ten.wsn.connection.calculate.CalculationThread;
+import com.ten.wsn.connection.calculate.NRMCalculation;
 import com.ten.wsn.connection.vertex.Vertex;
 
 import java.awt.*;
@@ -12,15 +12,15 @@ import static com.ten.wsn.connection.config.FrameSize.*;
  */
 public class NetCanves extends Canvas {
 
-    private CalculationThread obj;
+    private NRMCalculation obj;
     private Vertex[] vset;
     private int[][] matrix;
 
-    public NetCanves(CalculationThread obj) {
+    public NetCanves(NRMCalculation obj) {
         super();
         this.obj = obj;
-        this.vset = obj.getVset();
-        this.matrix = obj.getMatrix().getaMatrix();
+        this.vset = obj.getVertices();
+        this.matrix = obj.getMatrix().getAdjacencymatrix();
     }
 
     @Override

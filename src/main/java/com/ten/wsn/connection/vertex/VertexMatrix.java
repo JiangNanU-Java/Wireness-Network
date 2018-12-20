@@ -1,40 +1,44 @@
 package com.ten.wsn.connection.vertex;
 
+import java.util.Arrays;
+
 /**
  * 创建无向图的邻接矩阵
  */
 public class VertexMatrix {
 
-    private int[][] aMatrix;
+    private int[][] adjacencymatrix;
 
-    //创建并初始化一阶邻接矩阵
+    /**
+     * 创建并初始化一阶邻接矩阵
+     */
     public VertexMatrix(int size) {
-        this.aMatrix = new int[size][size];
-        //初始化为0
-        for (int i = 0; i < aMatrix.length; i++) {
-            for (int j = 0; j < aMatrix.length; j++) {
-                aMatrix[i][j] = 0;
+        this.adjacencymatrix = new int[size][size];
+        for (int i = 0; i < adjacencymatrix.length; i++) {
+            for (int j = 0; j < adjacencymatrix.length; j++) {
+                adjacencymatrix[i][j] = 0;
             }
         }
     }
 
-    //将连通的边置为1
+    /**
+     * 将连通的边置为1
+     */
     public void hasConnection(int i, int j) {
-        aMatrix[i][j] = 1;
+        adjacencymatrix[i][j] = 1;
     }
 
-    //打印邻接矩阵
+    /**
+     * 打印邻接矩阵
+     */
     public void show() {
-        for (int i = 0; i < aMatrix.length; i++) {
-            for (int j = 0; j < aMatrix.length; j++) {
-                System.out.print(aMatrix[i][j]);
-            }
+        Arrays.stream(adjacencymatrix).forEach(line -> {
+            Arrays.stream(line).forEach(System.out::print);
             System.out.println();
-        }
-        System.out.println();
+        });
     }
 
-    public int[][] getaMatrix() {
-        return aMatrix;
+    public int[][] getAdjacencymatrix() {
+        return adjacencymatrix;
     }
 }

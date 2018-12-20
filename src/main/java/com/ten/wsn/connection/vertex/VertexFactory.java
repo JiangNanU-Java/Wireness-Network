@@ -1,24 +1,26 @@
 package com.ten.wsn.connection.vertex;
 
 /**
- * 创建Vertex随机节点的工厂
+ * Vertex Factory
  */
 public class VertexFactory {
-
-    private int size;
-    private Vertex[] vertices;
-
-    public VertexFactory(int size) {
-        this.size = size;
-        this.vertices = new Vertex[size];
-    }
-
-    //返回一个大小为size的Vertex数组
-    public Vertex[] createVertexSet() {
-        for (int i = 0; i < size; i++) {
-            Vertex v = new Vertex(i);
-            vertices[i] = v;
+    /**
+     * Create random vertex array
+     *
+     * @param size vertex size
+     */
+    public static Vertex[] createVertexSet(int size) {
+        if (size <= 0) {
+            throw new IllegalArgumentException("Vertex size must be positive!");
         }
+
+        Vertex[] vertices = new Vertex[size];
+
+        for (int i = 0; i < size; i++) {
+            vertices[i] = new Vertex(i);
+        }
+
         return vertices;
     }
+
 }

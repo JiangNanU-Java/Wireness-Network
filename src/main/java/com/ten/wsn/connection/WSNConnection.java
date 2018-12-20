@@ -24,11 +24,11 @@ public class WSNConnection {
 
         // Asyn :fix Radius and increase Num
         Future<List<List<NRMValue>>> futureFixR = CompletableFuture
-                .supplyAsync(() -> new WSNDispatcher().startFixRediu());
+                .supplyAsync(() -> new WSNDispatcher().startFixRadius());
 
         // Asyn :fix Num and increase Radius
         Future<List<List<NRMValue>>> futureFixN = CompletableFuture
-                .supplyAsync(() -> new WSNDispatcher().startFixRediu());
+                .supplyAsync(() -> new WSNDispatcher().startFixRadius());
 
         // wait time 10s for calculation
         try {
