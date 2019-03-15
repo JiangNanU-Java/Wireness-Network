@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Wireness-Network" target="8" />
+      <module name="Wireness-Network" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
